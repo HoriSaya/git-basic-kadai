@@ -1,0 +1,45 @@
+horis@HMacBook-Air git-challenge % git init
+Initialized empty Git repository in /Users/git-challenge/.git/
+horis@HMacBook-Air git-challenge % git add .     
+horis@HMacBook-Air git-challenge % git statns
+git: 'statns' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+horis@HMacBook-Air git-challenge % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+
+horis@HMacBook-Air git-challenge % git commit -m "hello_world.txtを追加" 
+[main (root-commit) 79a763e] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+horis@HMacBook-Air git-challenge % git add .
+horis@HMacBook-Air git-challenge % git commit -m "日本語訳を追加"
+[main 0d86510] 日本語訳を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+horis@HMacBook-Air git-challenge % git status
+On branch main
+nothing to commit, working tree clean
+horis@HMacBook-Air git-challenge % git log
+commit 0d86510a6059ec5b0d33482c1535e379acb4b75b (HEAD -> main)
+Author: HoriSaya <hori.koharu22@gmail.com>
+Date:   Fri Apr 12 22:07:54 2024 +0900
+
+    日本語訳を追加
+
+commit 79a763ea0712abeba3add61ca034935311cb0e97
+Author: HoriSaya <hori.koharu22@gmail.com>
+Date:   Fri Apr 12 22:02:02 2024 +0900
+
+    hello_world.txtを追加
+horis@HMacBook-Air git-challenge % git log --oneline
+0d86510 (HEAD -> main) 日本語訳を追加
+79a763e hello_world.txtを追加
+horis@HMacBook-Air git-challenge % 
